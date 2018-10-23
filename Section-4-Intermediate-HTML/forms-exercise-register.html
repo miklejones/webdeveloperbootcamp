@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Forms Exercise</title>
+</head>
+
+<body>
+  <h1>Register</h1>
+
+  <form>
+    <label for="firstName">First Name: </label>
+    <input name="firstName" id="firstName" type="text" placeholder="Justin" required>
+
+    <label for="lastName">Last Name: </label>
+    <input nam="lastName" id="lastName" type="text" placeholder="Smith" required>
+
+    <div>
+      <label for="male">Male</label>
+      <input type="radio" id="male" value="MALE" name="gender">
+      <label for="female">Female</label>
+      <input type="radio" id="female" value="FEMALE" name="gender">
+      <label for="other">Other</label>
+      <input type="radio" id="other" value="OTHER" name="gender">
+    </div>
+
+    <div>
+      <label for="email">Email: </label>
+      <input name="email" type="email" placeholder="abc@email.com" id="email" required>
+
+      <label for="password">Password: </label>
+      <input name="password" type="password" placeholder="" id="password" pattern=".{5,}" required title="5 characters minimum">
+    </div>
+
+    <div>
+      <label for="birthday">Birthday:
+        <select name="month">
+          <option value="" disabled selected>Month</option>
+          <option value="JAN">Jan</option>
+          <option value="FEB">Feb</option>
+          <option value="MAR">Mar</option>
+        </select>
+        <select name="day">
+          <option value="" disabled selected>Day</option>
+          <option value="MON">Mon</option>
+          <option value="TUES">Tues</option>
+          <option value="WED">Wed</option>
+        </select>
+        <select name="year">
+          <option value="" disabled selected>Year</option>
+          <option value="2001">2001</option>
+          <option value="2002">2002</option>
+          <option value="2003">2003</option>
+        </select>
+      </label>
+
+    </div>
+
+    <label for="terms">I agree to the terms and conditions</label>
+    <input id="terms" type="checkbox" required>
+
+    <br>
+
+    <input type="submit">
+
+
+
+  </form>
+</body>
+
+</html>
