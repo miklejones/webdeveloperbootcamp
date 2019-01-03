@@ -1,0 +1,14 @@
+{
+  "name": "express-exercise-1",
+  "version": "1.0.0",
+  "description": "my first express app with colt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Garland",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
