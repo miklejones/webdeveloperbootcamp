@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+<title>WHoa</title>
+<link rel="stylesheet" type='text/css' href="/app.css">
+</head>
+
+<body>
+
+
+<h1>You fell in love with:  <%= thingVar %> </h1>
+
+<% if(thingVar.toLowerCase() === 'rusty'){ %>
+    <p>Good job choosing, Rusty.</P>
+<% } else {%>
+<p>Shoulda said, Rusty.</p>
+<% } %>
+<p>P.S. this is the love.ejs file!</p>
+
+</body>
