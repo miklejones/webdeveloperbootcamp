@@ -3,6 +3,8 @@ const app = express();
 const rp = require("request-promise");
 const bodyParser = require("body-parser");
 
+const PORT = process.env.PORT || 3001;
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
@@ -43,6 +45,6 @@ app.get("/campgrounds/new", (req, res) => {
     res.render("new.ejs");
 })
 
-app.listen(3001, "localhost", () => {
-    console.log("Listening on port 3001");
+app.listen(PORT, () => {
+    console.log(`Server is listening on port ${PORT}`);
 })
