@@ -13,6 +13,8 @@ const PORT = process.env.PORT || 3001;
 var app = express();
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
+
+//Passport Config
 app.use(require("express-session")({
     secret: "Raj is a duck.",
     resave: false,
