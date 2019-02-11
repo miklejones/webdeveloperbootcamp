@@ -26,9 +26,13 @@ router.post("/", isLoggedIn, (req, res) => {
     let CGname = req.body.name;
     let CGimage = req.body.image;
     let CGdesc = req.body.description;
-    let newCampground = { name: CGname, image: CGimage, description: CGdesc };
+    var author = {
+        id: req.user._id,
+        username: req.user.username
+    };
+    let newCampground = { name: CGname, image: CGimage, description: CGdesc, author: author };
     // Crreate a new campground and save to DB
-    Campground.create(newCampground, (err, newlyCreate) => {
+    Campground.create(newCampground, (err, newlyCreated) => {
         if (err) {
             console.log(err);
         } else {
